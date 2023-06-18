@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+</head>
+<body>
+    <div style="
+    display: grid;
+    grid-template-columns: 100px 50px 150px;
+    ">
+        <div style="background-color: rgb(231, 166, 80);">
+            div1
+        </div>
+        <div style="background-color: aqua;">
+            div2
+            <p>hi there</p>
+        </div>
+        <div style="background-color: aquamarine;">div3</div>
+    </div>
+
+    <div style="
+    display: grid;
+    margin-top: 22px;
+    grid-template-columns: 150px 75px 50px;
+    ">
+        <div style="background-color: rgb(231, 166, 80);">
+            div1
+        </div>
+        <div style="background-color: aqua;">
+            div2
+            <p>hi there</p>
+        </div>
+        <div style="background-color: aquamarine;">div3</div>
+        <div style="background-color: rgb(202, 202, 69);">
+            hi not more than coloum specified
+        </div>
+    </div>
+
+    <div style="
+    display: grid;
+    margin-top: 22px;
+    grid-template-columns: 150px 1fr ;
+    ">
+        <div style="background-color: rgb(231, 166, 80);">
+            div1
+        </div>
+        <div style="background-color: aqua;">
+            div2
+            <p>hi there</p>
+        </div>
+        <div style="background-color: aquamarine;">div3</div>
+        <div style="background-color: rgb(202, 202, 69);">
+            hi fr takes all remaining space
+        </div>
+    </div>    
+    <div style="
+    display: grid;
+    margin-top: 22px;
+    grid-template-columns: 2fr 1fr 1fr ;
+    ">
+        <div style="background-color: rgb(231, 166, 80);">
+            div1
+        </div>
+        <div style="background-color: aqua;">
+            div2
+            <p>hi there</p>
+        </div>
+        <div style="background-color: aquamarine;">div3</div>
+        <div style="background-color: rgb(202, 202, 69);">
+            hi fr takes all remaining space
+        </div>
+        <div style="background-color: aquamarine;">div3</div>
+        <div style="background-color: rgb(202, 202, 69);">
+            hi fr takes all remaining space
+        </div>
+    </div> 
+</body>
+</html>

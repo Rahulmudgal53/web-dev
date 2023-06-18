@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" style="background-image: url(image/wallpaper.jpg); background-attachment: fixed; background-repeat: no-repeat; background-size: cover;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="image/logo.png" class="logo-img" alt="Logo Image" >
+    </div>
+    <div class="card" id="container" style="width:614px; height:700px;">
+        <img src="image/1.jpg" id="bg1" width="614px" height="700px">
+        <span class="text" id="News"
+            style="width: 550px; top: 100px; left: 30px; line-height: 2em;">
+            {{News|safe}} 
+            <!-- These curly braces are a gateway for python variables and functions (via flask) to Front-end. This is done with the help of Jinja template engine.-->
+        </span>
+    </div>
+    <div id="canvasWrapper" class="dnwld-dbt">
+        <button class="button" onclick="download()">Download Post</button>
+    </div>
+</body>
+
+<style>
+    div {
+        text-align:center;   
+        margin-top: 50px;
+    }
+    .logo-img{
+        height: 16rem; 
+        width: 16rem;
+    }
+    .button{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        padding: .75rem;
+        border-radius: .375rem;
+        cursor: pointer;
+        font-size: xx-large;
+        font-weight: 600;
+        background-image: linear-gradient(rgb(8, 28, 248),rgb(14, 231, 242));
+    }
+    .button:hover{
+        background-image: linear-gradient(rgb(212, 15, 15),rgb(14, 242, 139));
+    }
+</style>
+
+
+<script>
+    
+</script>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function say(name,age){
+            if(name==""||age=="")
+            return;
+            document.write(name+" is "+age+" years old ");
+        }
+        var obj={
+            "name":"rahul","course":"Btech","stream":"cse"
+        };
+        document.write("what is your name beta: " +obj.name);
+        document.write(" which course.. amm " +obj.course);
+        document.write(" and "+obj.stream+" department. Nice:)");
+        
+        //all data in line
+        var txt ="", x;
+        for(x in obj){
+            txt +=obj[x] + " , ";
+        }
+        document.write(txt);
+
+        
+        // for(var i=1;i<=10;i+3){
+        //     document.write("<br>");
+        //     document.write(" i = "+i);
+        // }
+
+
+
+
+
+
+    </script>
+
+</head>
+<body>
+    <p>Ok then click the button</p>
+    <form action="">
+        <input name="n1" placeholder="enter name">
+        <input name="a1"placeholder="enter age">
+        <input type="button" onclick="say(n1.value, a1.value)" value="wow">
+    </form>
+    
+</body>
+</html>
